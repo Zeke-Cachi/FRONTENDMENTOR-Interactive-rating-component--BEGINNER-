@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Rating component</title>
+</head>
+<body>
+    <div id="first-card" class="container">
+        <div>
+            <img class="star bg-color" src="./img/icon-star.svg" alt="">
+            <h2 class="color-white">How did we do?</h2>
+            <p class="text-color">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>
+        <div class="flex ">
+            <button onclick="storeNumber('1')" class="bg-color rem-1 text-color round-button">1</button>
+            <button onclick="storeNumber('2')" class="bg-color rem-1 text-color round-button">2</button>
+            <button onclick="storeNumber('3')" class="bg-color rem-1 text-color round-button">3</button>
+            <button onclick="storeNumber('4')" class="bg-color rem-1 text-color round-button">4</button>
+            <button onclick="storeNumber('5')" class="bg-color rem-1 text-color round-button">5</button>
+        </div>
+        <button onclick="changeClass()" class="submit-btn color-white">SUBMIT</button>
+    </div>
+
+    <div id="second-card" class="container second-container disappear">
+        <img src="./img/illustration-thank-you.svg" alt="">
+        <p class="ty-p bg-color text-color">You selected <span id="span">0</span> out of 5</p>
+        <h2 class="color-white">Thank you!</h2>
+        <p class="text-color">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+
+    <script src="./script/rating.js"></script>
+</body>
+</html>

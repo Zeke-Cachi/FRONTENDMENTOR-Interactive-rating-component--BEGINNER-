@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+:root {
+    --grey-1: #262F38;
+    --orange-1: hsl(25, 97%, 53%);
+}
+
+.bg-color {
+    background-color: var(--grey-1);
+}
+
+.color-white {
+    color: white;
+}
+
+.text-color {
+    color: #7E858F;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #141519;
+}
+
+.container {
+    width: 26rem;
+    height: 26rem;
+    min-height: 20rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #1C232D;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.star {
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.submit-btn {
+    width: 96%;
+    background-color: var(--orange-1);
+    font-family: 'Overpass', serif;
+    height: 3rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    margin-top: .6rem;
+    transition: color 100ms;
+    border-width: 0;
+}
+
+.submit-btn:active {
+    color: var(--orange-1);
+    background-color: white;
+}
+
+h2 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    margin-top: 0.7rem;
+    line-height: 1.5rem;
+}
+
+body div div {
+    width: 100%;
+}
+
+.rem-1 {
+    font-size: 1rem;
+}
+
+.round-button {
+    border-radius: 100%;
+    margin: 0 .4rem;
+    padding: 1rem 1.3rem;
+    border-color: var(--grey-1);
+    border-width: 0;
+    font-weight: bold;
+    transition: color 100ms;
+}
+
+.round-button:focus {
+    background-color: var(--orange-1);
+    color: white;
+}
+
+/* SECOND STATE */
+
+.disappear {
+    display: none;
+}
+
+.ty-p {
+    color: #B97C50;
+    border-radius: 25px;
+    padding: 0.2rem 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.second-container {
+    padding: 3rem 1.7rem;
+}
+
+.second-container p {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:375px) {
+    .container {
+        transform: scale(.6);
+    }
+}
+
+
